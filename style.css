@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+/* ==============
+Fontes / Fonts
+============== */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ==============
+Variáveis / Variables
+============== */
+
+:root {
+    --color-primary: #C6B2A3;
+    --color-secundary: #EAE4E6;
+    --color-background: #F3F3F3;
+    --color-text-ecru: #C4A77D;
+    --color-text: #2F2F2F;
+    --color-text-oxford-blue: #0A2032;
+    --color-border: #CEB5A7;
+    --color-site-wix-logo: #B49F94;
+    --color-rosa-bem-claro: #F2ECE9;
+    --ff-primary-title: 'Raleway', sans-serif;
+    --ff-secundary-title: 'Nunito Sans', sans-serif;
+    --ff-text:'Poppins', sans-serif;
+    --gradient-principal-section: radial-gradient(#EAE4E6, #C6B2A3);
+    --gradient-title: linear-gradient(to right, #0A2032, #2F2F2F);
+
+    /* verificar o gradiente linear dos tittle com elas   */
+}
+
+/* ==============
+Stilos Globais / Global Styles
+============== */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--ff-secundary-title);
+}
+
+/* ==============
+Link para o WhatsApp / Link for WhatsApp
+============== */
+
+#WhatsApp-LupepsoMarcon {
+    position: absolute;
+    z-index: 10;
+    font-size: 32px;
+    color: var(--color-text);
+    /* verificar com elas se querem mudar a cor do link do WhatsApp */
+    right: 25px;
+    bottom: 25px;
+    transition: 1s;
+}
+
+#WhatsApp-LupepsoMarcon:hover {
+    transform: scale(1.5);
+    transition: 1s;
+    color: green;
+    /* verificar com elas se querem mudar a cor do link do WhatsApp */
+    right: 25px;
+    bottom: 25px;
+}
+
+/* ==============
+Início do Cabeçalho / Start of Header
+============== */
+
+header {
+    background-color: var(--color-site-wix-logo);
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    border: 5px solid var(--color-border);
+    box-shadow: 0px 0px 20px 2px black;
+    position: sticky;
+    top: 0px;
+}
+
+#logo-header {
+    height: 10vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+}
+
+#logo-header img {
+    scale: calc(4.0);
+}
+
+.container-links-1 {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+}
+
+.container-links-2 {
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+}
+
+.container-links-1 a {
+    color: var(--color-text);
+    /* verificar com elas se querem mudar a cor dos links do cabeçalho */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.container-links-1 a:hover {
+    color: var(--color-secundary);
+    transition: 1s;
+    /* verificar com elas se querem mudar a cor dos links iniciais quando passa o mouse por cima*/
+}
+
+.container-links-2 i {
+    color: var(--color-text);
+    /* verificar com elas se querem mudar a cor das logos das redes sociais */
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.container-links-2 i:hover {
+    transform: scale(1.2);
+    transition: 1s;
+    color: var(--color-secundary);
+    /* verificar com elas se querem mudar a cor das logos das redes sociais quando passa o mouse por cima*/
+}
+
+/* ==============
+Fim do Cabeçalho / end of Header
+============== */
+
+/* ==============
+Início do Carrossel / start of slider
+============== */
+
+.section-speciality {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo-sectiin-container {
+    position: absolute;
+}
+
+.section-speciality-title {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: var(--color-secundary);
+    box-shadow: 0px 0px 20px 2px black;
+}
+
+.section-speciality h1 {
+    font-size: 32px;
+    font-weight: bolder;
+    font-style: italic;
+    background-image: var(--gradient-title);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.container-speciality {
+    display: flex;
+    background-color: var(--color-rosa-bem-claro);
+    border-style: solid;
+    border-color: var(--color-secundary);
+    box-shadow: 0px 0px 20px 2px black;
+}
+.div-speciality {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80vh;
+    width: 70vw;
+    /* background-image: url("img-logo/Logo-circular-fundo-branco\ copy\ 2.png"); */
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    /* border: 3px solid green; */
+}
+
+.description h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bolder;
+    font-style: italic;
+    padding: 5px 5px;
+    border: 5px solid var(--color-site-wix-logo);
+    border-radius: 10px;
+    color: var(--color-text);
+    background-color: var(--color-secundary);
+    box-shadow: 0px 0px 20px 2px black;
+}
+.description p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+    margin-left: 25px;
+    margin: 10px;
+    background-color: var(--color-secundary);
+    border: 5px solid var(--color-site-wix-logo);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 2px black;
+}
+
+.description > p {
+    display: none;
+    transition-duration: 2s;
+}
+.description:hover > p {
+    display: block;
+    transition-duration: 2s;
+}
+
+.principal-image {
+    height: 80vh;
+    width: 30vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.principal-image img {
+    height: 70vh;
+    border: 5px solid var(--color-site-wix-logo);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 2px black;
+}
